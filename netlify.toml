@@ -1,0 +1,10 @@
+# Konfigurasi Netlify — deploy via Git langsung jalan tanpa setup manual.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: semua rute kembali ke index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
